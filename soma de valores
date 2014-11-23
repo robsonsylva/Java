@@ -1,0 +1,20 @@
+// Soma de dois números atribuídos
+// Domingo, 23-11-2014
+public class Somadenumeros {
+
+	public static void main(String[] args) {
+		int num1 = 10;
+		int num2 = 20;
+		double num3 = 3.1415;
+		double num4 = 1.4142;
+		System.out.println("Soma dos inteiro: " + (num1 + num2));
+		System.out.println("Soma dos doubles: " + (num3 + num4));
+		// Se a soma da variáveis estiver fora de parentêses os seus
+		// conteúdos serão tratados como Strings e o resultado será a
+		// concatenação.
+		System.out.println("Resultados da soma sem os parênteses");
+		System.out.println("Soma dos inteiro: " + num1 + num2);
+		System.out.println("Soma dos doubles: " + num3 + num4);		
+	}
+
+}
