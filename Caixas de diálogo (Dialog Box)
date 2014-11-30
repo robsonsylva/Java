@@ -1,0 +1,12 @@
+/***********************************************************
+ *           Exercício com caixa de mensagens              *
+ ***********************************************************/
+ import javax.swing.JOptionPane;
+ class Cadastro {
+ 	public static void main(String[] args){
+ 	String nome = JOptionPane.showInputDialog("Nome: ");
+ 	String matricula = JOptionPane.showInputDialog("Cadastro: ");
+ 	String admissao = JOptionPane.showInputDialog("Data de admissao: ");
+ 	JOptionPane.showMessageDialog(null, "Dados digitados: " + nome + " Cadastro: " + matricula + " Admissao: " + admissao);
+ 	}
+ }
