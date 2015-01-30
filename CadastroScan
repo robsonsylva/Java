@@ -1,0 +1,18 @@
+/* **************************************************************************************
+ *                    Simulacao de cadastro atraves do console                          *
+  ***************************************************************************************/
+import java.util.Scanner;
+public class CadastroScan{
+	public static void main(String[] args){
+	Scanner nome = new Scanner(System.in);
+	Scanner matricula = new Scanner(System.in);
+	Scanner data = new Scanner(System.in);
+	System.out.println("Nome: ");
+	String Nome=nome.nextLine();
+	System.out.println("Cadastro: ");
+	String Matricula=matricula.nextLine();
+	System.out.println("Data de admissao: ");
+	String Data=data.nextLine();
+	System.out.println("Nome: " + Nome + "   Cadastro: " + Matricula+"   Admissao: "+Data);
+	}
+}
