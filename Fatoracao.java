@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Fatoracao {
 	public static void main (String[] args){
 		int numero = 0;
-		int divisor = 1;
+		int divisor = 3;
 		boolean flag = false;
 		Scanner scan = new Scanner(System.in);
 		while (numero<=1){
@@ -23,5 +23,15 @@ public class Fatoracao {
 				flag = true;
 		}
 		while (flag == false);
+// *** Caso o numero entrado não seja uma potencia de 2 procura-se por fatores primos impares ***
+		if (numero >= 3) {
+			do {
+				while (numero%divisor != 0)
+					divisor = divisor+2;
+			System.out.print(divisor + " x ");
+			numero = numero/divisor;
+			}
+			while(!(numero==1));
+		}
 	}
 }
