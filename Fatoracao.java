@@ -16,8 +16,10 @@ public class Fatoracao {
 //	*** Procura por fatores 2 no numero entrado ***
 		do {
 			if (numero%2 == 0) {
-				System.out.print("2 x ");
+				System.out.print("2 ");
 				numero = numero/2;
+				if (numero%2 == 0 || numero != 1)
+					System.out.print("x ");
 			}
 			else 
 				flag = true;
@@ -28,8 +30,10 @@ public class Fatoracao {
 			do {
 				while (numero%divisor != 0)
 					divisor = divisor+2;
-			System.out.print(divisor + " x ");
+			System.out.print(divisor);
 			numero = numero/divisor;
+			if (numero != 1)
+				System.out.print(" x ");
 			}
 			while(!(numero==1));
 		}
